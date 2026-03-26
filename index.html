@@ -1,60 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фермерские яйца</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-            text-align: center;
-        }
-        header {
-            padding: 80px 20px;
-            background: url('https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f') center/cover;
-        }
-        h1 {
-            font-size: 50px;
-            margin: 0;
-        }
-        .price {
-            font-size: 30px;
-            margin: 20px 0;
-            color: #ffd700;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        .btn {
-            padding: 15px 30px;
-            border: none;
-            background: #ffd700;
-            color: black;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farm Eggs</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1604908176997-4315c4d0a3d3') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: 28px;
+    color: gold;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: gold;
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Фермерские яйца</h1>
-    <p>Свежие, натуральные, прямо с хозяйства</p>
-    <div class="price">5€ за 10 яиц</div>
-    <button class="btn">Заказать</button>
+<div>
+    <h1>FARM EGGS</h1>
+    <p>Натуральные яйца прямо с фермы</p>
+    <div class="price">5€ / 10 яиц</div>
+
+    <a href="https://wa.me/123456789">
+        <button class="btn">Заказать WhatsApp</button>
+    </a>
+</div>
 </header>
 
 <section>
-    <h2>Почему наши яйца?</h2>
-    <p>Куры на свободном выгуле, натуральное питание, без химии.</p>
+<h2>Почему выбирают нас</h2>
+<div class="cards">
+    <div class="card">🐔 Свободный выгул</div>
+    <div class="card">🌿 Натуральный корм</div>
+    <div class="card">🥚 Свежесть каждый день</div>
+</div>
 </section>
 
 <section>
-    <h2>Контакты</h2>
-    <p>Напишите в Telegram / WhatsApp</p>
+<h2>Доставка</h2>
+<p>Доставка по городу или самовывоз</p>
+</section>
+
+<section>
+<h2>Мы на карте</h2>
+<iframe src="https://maps.google.com/maps?q=Warsaw&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<section>
+<h2>Контакты</h2>
+<p>WhatsApp / Telegram</p>
 </section>
 
 </body>
