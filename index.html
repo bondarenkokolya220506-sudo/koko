@@ -1,80 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Фермерские яйца</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0a0a0a;
+            background: #111;
             color: white;
+            text-align: center;
         }
         header {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            padding: 80px 20px;
+            background: url('https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f') center/cover;
         }
         h1 {
             font-size: 50px;
             margin: 0;
         }
-        p {
-            color: #aaa;
-        }
-        .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
-            border: 1px solid white;
-            background: transparent;
-            color: white;
-            cursor: pointer;
+        .price {
+            font-size: 30px;
+            margin: 20px 0;
+            color: #ffd700;
         }
         section {
-            padding: 60px 20px;
-            text-align: center;
+            padding: 40px 20px;
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-        }
-        .gallery div {
-            height: 300px;
-            background: #222;
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            background: #ffd700;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div>
-        <h1>Your Name</h1>
-        <p>Model / Portfolio</p>
-        <button class="btn">Contact Me</button>
-    </div>
+    <h1>Фермерские яйца</h1>
+    <p>Свежие, натуральные, прямо с хозяйства</p>
+    <div class="price">5€ за 10 яиц</div>
+    <button class="btn">Заказать</button>
 </header>
 
 <section>
-    <h2>About</h2>
-    <p>Young model focused on fashion, editorial, and commercial work.</p>
+    <h2>Почему наши яйца?</h2>
+    <p>Куры на свободном выгуле, натуральное питание, без химии.</p>
 </section>
 
 <section>
-    <h2>Portfolio</h2>
-    <div class="gallery">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+    <h2>Контакты</h2>
+    <p>Напишите в Telegram / WhatsApp</p>
 </section>
 
 </body>
